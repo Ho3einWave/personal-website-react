@@ -2,6 +2,12 @@
 
 A personal website showcasing my portfolio, link shortner, and contact information. 🌐
 
+<div align="center">
+
+[![stars - personal-website-react](https://img.shields.io/github/stars/ho3einwave/personal-website-react?style=social)](https://github.com/ho3einwave/personal-website-react) [![forks - personal-website-react](https://img.shields.io/github/forks/ho3einwave/personal-website-react?style=social)](https://github.com/ho3einwave/personal-website-react)
+
+</div>
+
 ## Table of Contents 📚
 
 - [Personal Website ✨](#personal-website-)
@@ -11,6 +17,7 @@ A personal website showcasing my portfolio, link shortner, and contact informati
   - [Installation ⚙️](#installation-️)
   - [Usage 🚀](#usage-)
   - [Customization 🎨](#customization-)
+  - [Special Thanks 🙌](#special-thanks-)
   - [Contributing 🤝](#contributing-)
   - [License 📄](#license-)
 
@@ -68,6 +75,11 @@ Remember to document any customizations you make for future reference or for the
 Please note that while customizing the personal website, it is important to ensure compliance with the project's license and any applicable laws or regulations.
 
 Enjoy customizing your personal website and make it a reflection of your unique identity and style! 🌟🚀
+
+## Special Thanks 🙌
+Thank you, [SklyerX](https://github.com/SklyerX), for your invaluable support throughout this project. Your expertise, dedication, and positive attitude made a significant impact. 🌟
+
+I appreciate your guidance, ideas, and feedback, which elevated the project's quality. Your belief in me and willingness to help were truly inspiring. 🤝
 
 ## Contributing 🤝
 
