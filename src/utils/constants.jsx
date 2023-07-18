@@ -151,7 +151,7 @@ export default {
       link: "mailto:https://t.me/ho3einwave",
     },
   ],
-  api_endpoint: "http://192.168.1.100:8000/v1",
+  api_endpoint: "https://api.hoseinwave.ir/v1",
   github_url: "https://github.com/ho3einwave",
   github_username: "Ho3einWave",
   discord_id: "851218809204768788",
