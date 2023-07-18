@@ -3,7 +3,7 @@ import { useLanyard } from "react-use-lanyard";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 
-import NavBar from "../components/navbar";
+import NavBar from "../components/NavBar";
 import Tooltip from "../components/ToolTip";
 import RepoCard from "../components/RepoCard";
 import DiscordCard from "../components/DiscordCard";
