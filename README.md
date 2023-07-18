@@ -4,7 +4,8 @@ A personal website showcasing my portfolio, link shortner, and contact informati
 
 <div align="center">
 
-[![stars - personal-website-react](https://img.shields.io/github/stars/ho3einwave/personal-website-react?style=social)](https://github.com/ho3einwave/personal-website-react) [![forks - personal-website-react](https://img.shields.io/github/forks/ho3einwave/personal-website-react?style=social)](https://github.com/ho3einwave/personal-website-react)
+[![stars - personal-website-react](https://img.shields.io/github/stars/ho3einwave/personal-website-react?style=social)](https://github.com/ho3einwave/personal-website-react) [![forks - personal-website-react](https://img.shields.io/github/forks/ho3einwave/personal-website-react?style=social)](https://github.com/ho3einwave/personal-website-react) [![Netlify Status](https://api.netlify.com/api/v1/badges/f7913753-5016-4c0e-b0ed-2f06d6cd89de/deploy-status)](https://app.netlify.com/sites/hoseinwave/deploys)
+
 
 </div>
 
