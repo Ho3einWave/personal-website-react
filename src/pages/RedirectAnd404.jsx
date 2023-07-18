@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import redirects from "../utils/redirect.json";
 import { useLocation, Link } from "react-router-dom";
 import { TypeAnimation } from "react-type-animation";
+import redirects from "../utils/redirect.json";
 
 const RedirectAnd404 = () => {
   const path = location.pathname.slice(1);

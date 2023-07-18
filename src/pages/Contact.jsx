@@ -1,12 +1,16 @@
 import { useEffect, useState, Suspense } from "react";
+
 import toast, { Toaster } from "react-hot-toast";
 import SocialCard from "../components/SocialCard";
+
 import { RiSendPlane2Fill } from "react-icons/ri";
 import { useThemeStore } from "../contexts/theme";
 import ReCAPTCHA from "react-google-recaptcha";
+
 import NavBar from "../components/navbar";
 import Footer from "../components/Footer";
 import constants from "../utils/constants";
+
 import axios from "axios";
 
 const Contact = () => {

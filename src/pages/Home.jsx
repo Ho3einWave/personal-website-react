@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { useLanyard } from "react-use-lanyard";
+import { useThemeStore } from "../contexts/theme";
 import { TypeAnimation } from "react-type-animation";
+import { useLanyard } from "react-use-lanyard";
 import { motion } from "framer-motion";
 
 import NavBar from "../components/navbar";
@@ -9,12 +10,11 @@ import RepoCard from "../components/RepoCard";
 import DiscordCard from "../components/DiscordCard";
 
 import { Link } from "react-router-dom";
-import { ImLocation } from "react-icons/im";
 import Footer from "../components/Footer";
 import avatar from "../assets/avatar.jpg";
 import constants from "../utils/constants";
+import { ImLocation } from "react-icons/im";
 import axios from "axios";
-import { useThemeStore } from "../contexts/theme";
 
 const Home = () => {
   const { mode } = useThemeStore();
