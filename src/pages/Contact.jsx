@@ -1,6 +1,6 @@
 import { useEffect, useState, Suspense } from "react";
 import toast, { Toaster } from "react-hot-toast";
-import NavBar from "../components/navbar";
+import NavBar from "../components/NavBar";
 import SocialCard from "../components/SocialCard";
 import Footer from "../components/Footer";
 import ReCAPTCHA from "react-google-recaptcha";
