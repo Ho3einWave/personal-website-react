@@ -5,12 +5,15 @@ import { BsFillSunFill, BsMoon } from "react-icons/bs";
 
 import { Link } from "react-router-dom";
 import { useThemeStore } from "../contexts/theme";
+
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const { mode, setMode } = useThemeStore();
+
   const changeMode = () => {
     mode === "dark" ? setMode("light") : setMode("dark");
   };
+
   useEffect(() => {
     if (mode === "light") {
       document.documentElement.style.filter = "invert(100%) hue-rotate(180deg)";
@@ -18,12 +21,14 @@ const NavBar = () => {
       document.documentElement.style.filter = "invert(0) hue-rotate(0deg)";
     }
   }, [mode]);
+
   const menuOnclick = () => {
     document.body.style.overflow = menuOpen ? "scroll" : "hidden";
     setMenuOpen((e) => {
       return !e;
     });
   };
+
   return (
     <>
       <div className="w-full flex text-white ">

@@ -4,12 +4,15 @@ import { useLocation, Link } from "react-router-dom";
 import { TypeAnimation } from "react-type-animation";
 
 const RedirectAnd404 = () => {
-  const location = useLocation();
   const path = location.pathname.slice(1);
+  const location = useLocation();
+
   const isfound = redirects.filter((e) => {
     return e.path === path;
   })[0];
+
   const [counter, setCounter] = useState(4);
+
   useEffect(() => {
     if (isfound) {
       document.title = isfound.title;

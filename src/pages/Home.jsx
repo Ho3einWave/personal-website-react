@@ -69,7 +69,7 @@ const Home = () => {
     }
   }, [repos]);
   return (
-    <div className={`bg-zinc-900 min-h-screen text-white font-rubik bg-grid `}>
+    <div className={`bg-zinc-900 min-h-screen text-white font-rubik bg-grid`}>
       <NavBar />
 
       <div className="flex w-full items-center justify-center flex-col">
@@ -214,7 +214,7 @@ const Home = () => {
           transition={{ duration: 1 }}
           className="mt-16 text-center flex flex-col items-center"
         >
-          <h1 className="text-2xl font-semibold relative z-10 heading-effect lg:text-3xl mt-24 ">
+          <h1 className="text-2xl font-semibold relative z-10 heading-effect lg:text-3xl mt-24">
             Projects
           </h1>
           <p className="text-start max-w-[20rem] mt-5 md:max-w-[30rem] lg:max-w-[750px] lg:text-lg">
@@ -231,7 +231,7 @@ const Home = () => {
             of my most popular repositories.
           </p>
           <div
-            className="grid grid-cols-1 gap-4  md:grid-cols-2 my-16    :D"
+            className="grid grid-cols-1 gap-4 md:grid-cols-2 my-16"
             id="cards"
           >
             {top4.map((item, idx) => {

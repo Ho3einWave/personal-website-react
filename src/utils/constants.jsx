@@ -29,6 +29,7 @@ import {
   SiDiscord,
 } from "react-icons/si";
 import { FaSass } from "react-icons/fa";
+
 export default {
   top_page_socials: [
     {

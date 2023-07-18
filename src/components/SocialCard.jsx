@@ -1,5 +1,6 @@
-import React from "react";
 import { FiExternalLink } from "react-icons/fi";
+import React from "react";
+
 const SocialCard = ({ title, link, icon }) => {
   return (
     <a

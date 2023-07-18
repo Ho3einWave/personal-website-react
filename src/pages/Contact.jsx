@@ -1,26 +1,30 @@
 import { useEffect, useState, Suspense } from "react";
 import toast, { Toaster } from "react-hot-toast";
-import NavBar from "../components/navbar";
 import SocialCard from "../components/SocialCard";
-import Footer from "../components/Footer";
-import ReCAPTCHA from "react-google-recaptcha";
 import { RiSendPlane2Fill } from "react-icons/ri";
-import constants from "../utils/constants";
 import { useThemeStore } from "../contexts/theme";
+import ReCAPTCHA from "react-google-recaptcha";
+import NavBar from "../components/navbar";
+import Footer from "../components/Footer";
+import constants from "../utils/constants";
 import axios from "axios";
+
 const Contact = () => {
   const { mode } = useThemeStore();
   const [time, setTime] = useState();
   const [mystate, setMystate] = useState("");
+
   useEffect(() => {
     const date = new Date();
     const timezone = constants.time_zone;
+
     const formattedTime = date.toLocaleString("en-US", {
       timeZone: timezone,
       hour: "2-digit",
       minute: "2-digit",
       hour12: true,
     });
+
     const hour = date.toLocaleString("en-US", {
       timeZone: timezone,
       hour: "numeric",
@@ -28,6 +32,7 @@ const Contact = () => {
 
     hour > 8 && hour < 22 ? setMystate("awake") : setMystate("sleeping");
     setTime(formattedTime);
+
     setInterval(() => {
       const date = new Date();
 
@@ -51,6 +56,7 @@ const Contact = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [captcha, setCaptcha] = useState("");
+
   const sendMessage = () => {
     const emailPattern = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
 
@@ -118,6 +124,7 @@ const Contact = () => {
       }
     );
   };
+
   return (
     <Suspense fallback={<h1> Fuck Wait a sec</h1>}>
       <div className="text-white bg-zinc-900 min-h-screen bg-grid">

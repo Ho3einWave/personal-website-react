@@ -1,7 +1,9 @@
-import React from "react";
 import { useThemeStore } from "../contexts/theme";
+import React from "react";
+
 const Loading = () => {
   const { mode } = useThemeStore();
+
   return (
     <div
       className={`w-screen h-screen flex items-center justify-center bg-zinc-900 bg-grid ${
