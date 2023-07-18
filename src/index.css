@@ -1,0 +1,226 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #0080f5;
+  --box-glass: rgba(54, 72, 105, 0.1);
+  --scrollbar-bg: #212529;
+  --scrollbar-thumb: #ffffff9f;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 10px;
+}
+
+.heading-effect::before {
+  content: "";
+  position: absolute;
+  width: calc(100% + 1rem);
+  right: -0.5rem;
+  bottom: 15%;
+  height: 1rem;
+  background: var(--primary);
+  transform: translateX();
+  z-index: -1;
+}
+
+#cards:hover > .card > .card-border {
+  opacity: 1;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+.card::before,
+.card > .card-border {
+  border-radius: inherit;
+  content: "";
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 300ms;
+  top: 0px;
+  width: 100%;
+  z-index: 2;
+}
+
+.card::before {
+  background: radial-gradient(
+    800px circle at var(--mouse-x) var(--mouse-y),
+    rgba(255, 255, 255, 0.06),
+    transparent 40%
+  );
+  z-index: 3;
+}
+
+.card > .card-border {
+  background: radial-gradient(
+    400px circle at var(--mouse-x) var(--mouse-y),
+    rgba(255, 255, 255, 0.3),
+    transparent 40%
+  );
+  z-index: 1;
+}
+
+.card > .card-content {
+  background-color: #1e1e1e;
+  border-radius: inherit;
+  height: calc(100% - 2px);
+  margin: 1px;
+  position: relative;
+  width: calc(100% - 2px);
+  z-index: 2;
+}
+.bg-grid {
+  background-size: 100px 100px;
+  background-image: linear-gradient(
+      to right,
+      rgb(35, 35, 35) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgb(35, 35, 35) 1px, transparent 1px);
+  background-attachment: fixed;
+}
+
+.spinner {
+  width: 70.4px;
+  height: 70.4px;
+  --clr: var(--primary);
+  --clr-alpha: var(--box-glass);
+  animation: spinner 1.6s infinite ease;
+  transform-style: preserve-3d;
+}
+
+.spinner > div {
+  background-color: var(--clr-alpha);
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  border: 3.5px solid var(--clr);
+}
+
+.spinner div:nth-of-type(1) {
+  transform: translateZ(-35.2px) rotateY(180deg);
+}
+
+.spinner div:nth-of-type(2) {
+  transform: rotateY(-270deg) translateX(50%);
+  transform-origin: top right;
+}
+
+.spinner div:nth-of-type(3) {
+  transform: rotateY(270deg) translateX(-50%);
+  transform-origin: center left;
+}
+
+.spinner div:nth-of-type(4) {
+  transform: rotateX(90deg) translateY(-50%);
+  transform-origin: top center;
+}
+
+.spinner div:nth-of-type(5) {
+  transform: rotateX(-90deg) translateY(50%);
+  transform-origin: bottom center;
+}
+
+.spinner div:nth-of-type(6) {
+  transform: translateZ(35.2px);
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(45deg) rotateX(-25deg) rotateY(25deg);
+  }
+
+  50% {
+    transform: rotate(45deg) rotateX(-385deg) rotateY(25deg);
+  }
+
+  100% {
+    transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
+  }
+}
+
+.loader {
+  --eye: #ffffff;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  border: 5px solid var(--eye);
+  border-radius: 100%;
+  animation: translate-keyframes 2s infinite linear;
+}
+
+.loader span {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border-top: 12px solid var(--eye);
+  border-bottom: 5px solid var(--eye);
+  outline: 2px solid var(--eye);
+}
+
+.loader span {
+  animation: rotate-keyframes 2s infinite linear;
+}
+
+@keyframes translate-keyframes {
+  0% {
+    transform: translate(-100%, -50%);
+  }
+
+  95% {
+    transform: translate(50%, -50%);
+  }
+
+  96% {
+    transform: translate(-50%, -50%);
+  }
+
+  100% {
+    transform: translate(-100%, -50%);
+  }
+}
+
+@keyframes rotate-keyframes {
+  90% {
+    height: 40px;
+  }
+
+  95% {
+    height: 0px;
+  }
+
+  100% {
+    height: 40px;
+  }
+}
