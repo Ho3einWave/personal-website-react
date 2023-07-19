@@ -1,4 +1,3 @@
-import React from "react";
 import guide from "../assets/guide_1.png";
 import { useThemeStore } from "../contexts/theme";
 

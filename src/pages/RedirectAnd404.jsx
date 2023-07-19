@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import redirects from "../utils/redirect.json";
 import { useLocation, Link } from "react-router-dom";
 import { TypeAnimation } from "react-type-animation";
@@ -22,7 +22,7 @@ const RedirectAnd404 = () => {
         window.location.replace(isfound.url);
       }
     }
-  }, [counter]);
+  }, [counter, isfound]);
 
   return (
     <div className="flex flex-col items-center justify-center text-white font-rubik w-screen h-screen bg-zinc-900 bg-grid">
