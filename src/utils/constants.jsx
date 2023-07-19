@@ -36,7 +36,7 @@ export default {
       icon: <BsGithub />,
     },
     {
-      link: "https://t.me/ho3einwave",
+      link: "https://t.me/HoseinBaseri",
       icon: <BsTelegram />,
     },
     {
@@ -143,12 +143,12 @@ export default {
     {
       title: "@ho3einwave",
       icon: <BsTelegram />,
-      link: "https://t.me/ho3einwave",
+      link: "https://t.me/HoseinBaseri",
     },
     {
       title: "me@hoseinwave.ir",
       icon: <IoMail />,
-      link: "mailto:https://t.me/ho3einwave",
+      link: "mailto:me@hoseinwave.ir",
     },
   ],
   api_endpoint: "https://api.hoseinwave.ir/v1",
