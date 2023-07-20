@@ -16,6 +16,9 @@ A personal website showcasing my portfolio, link shortner, and contact informati
   - [Description 📝](#description-)
   - [Features ✨](#features-)
   - [Installation ⚙️](#installation-️)
+  - [Contact Form Setup 📑](#contact-form-setup-)
+    - [1. ReCaptcha Key and Secret 🔐](#1-recaptcha-key-and-secret-)
+    - [2. Discord Webhook URL 📡](#2-discord-webhook-url-)
   - [Usage 🚀](#usage-)
   - [Customization 🎨](#customization-)
   - [Special Thanks 🙌](#special-thanks-)
@@ -43,6 +46,29 @@ To run the personal website locally, follow these steps:
 3. Install dependencies: `npm install`
 4. Start the development server: `npm run dev`
 5. Open your web browser and visit `http://localhost:5173` to view the website. 🌐
+
+
+## Contact Form Setup 📑
+
+To make the contact form work, you'll need to follow these steps:
+
+### 1. ReCaptcha Key and Secret 🔐
+
+- Go to the [ReCaptcha Admin Console](https://www.google.com/recaptcha/admin/) and sign in with your Google account.
+- Register a new site by providing a label and domain name.
+- Once registered, you receive a **Captcha key** and **Captcha secret**- Open the `src/utils/constants.jsx` file in your project and replace the value of `recaptcha_key` with your Captcha key.
+- In the Netlify panel for your site, go to "Site Configuration" > "Environment Variables" > "Add a Variable" and add a new environment variable named `RECAPTCHA_SECRET` with the value of your Captcha secret.
+
+### 2. Discord Webhook URL 📡
+
+- Obtain the Discord webhook URL where you want to receive the contact form submissions.
+- In the Netlify panel for your site, go to "Site Configuration" > "Environment Variables" > "Add a Variable" and add a new environment variable named `DISCORD_WEBHOOK` with the value of your Discord webhook URL.
+
+Once you have completed these steps, your contact form should be ready to use. When a user submits the form, the data will be validated using ReCaptcha and then sent to the specified Discord webhook URL.
+
+Make sure to save your changes and redeploy your site for the updates to take effect.
+
+Feel free to customize the instructions based on your specific setup or requirements. ✨
 
 ## Usage 🚀
 

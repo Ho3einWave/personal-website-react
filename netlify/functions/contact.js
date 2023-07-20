@@ -11,7 +11,7 @@ export const handler = async (event, context) => {
         )
     ).json();
     if (captcha_res.success) {
-        await fetch(process.env.DISCORD_TOKEN, {
+        await fetch(process.env.DISCORD_WEBHOOK, {
             method: "POST",
             headers: myHeaders,
             body: JSON.stringify({
