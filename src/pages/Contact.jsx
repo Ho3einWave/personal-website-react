@@ -97,7 +97,7 @@ const Contact = () => {
             return;
         }
         toast.promise(
-            axios.post(`/api/contact`, {
+            axios.post(`.netlify/functions/contact`, {
                 name,
                 email,
                 message,
