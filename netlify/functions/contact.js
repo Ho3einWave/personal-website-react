@@ -1,4 +1,9 @@
-import formattedReturn from "../utils/formattedReturn";
+const formattedReturn = (body, statusCode) => {
+    return {
+        statusCode: statusCode ? statusCode : 200,
+        body: JSON.stringify(body),
+    };
+};
 
 export const handler = async (event, context) => {
     const body = JSON.parse(event.body);
