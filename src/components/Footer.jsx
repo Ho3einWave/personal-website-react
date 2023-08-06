@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="text-start w-[90vw] pb-10 max-w-[800px]">
         <h1 className="text-2xl font-bold">Hosein Baseri</h1>
         <h2 className="opacity-50">
-          Sofware Engineer • {new Date().getFullYear()}
+          Software Engineer • {new Date().getFullYear()}
         </h2>
         <h2 className="opacity-50">me@hoseinwave.ir</h2>
       </div>
