@@ -236,7 +236,7 @@ const Home = () => {
                     <h1 className="text-2xl font-semibold relative z-10 heading-effect lg:text-3xl mt-24 ">
                         Projects
                     </h1>
-                    <div className="mt-10">
+                    <div className="mt-10 grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3">
                         {projects.projects
                             ? projects.projects.map((item) => (
                                   <ProjectsCard {...item} />

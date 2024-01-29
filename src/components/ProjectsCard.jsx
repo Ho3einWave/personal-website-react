@@ -39,13 +39,14 @@ const ProjectsCard = ({
                         effect={"flip"}
                         grabCursor={true}
                         loop
+                        autoplay
                         modules={[EffectFlip]}
-                        className="rounded-2xl"
+                        className="rounded-2xl w-[17rem]"
                     >
                         {images.map((image, idx) => (
                             <SwiperSlide key={`${name}-${idx}`}>
                                 <img
-                                    className="rounded-2xl  object-contain"
+                                    className="rounded-2xl object-contain w-[17rem]"
                                     src={image}
                                 />
                             </SwiperSlide>
@@ -95,9 +96,13 @@ const ProjectsCard = ({
                         </a>
 
                         <a
-                            href={github_link ? "" : "#"}
+                            href={github_link ? github_link : "#"}
+                            target="blank"
+                            style={{
+                                pointerEvents: github_link ? "auto" : "none",
+                                opacity: github_link ? 1 : 0.3,
+                            }}
                             className="bg-zinc-900 w-1/2  rounded-2xl flex items-center justify-center p-2 "
-                            style={{ opacity: github_link ? 1 : 0.3 }}
                         >
                             <FaGithub />
                         </a>
