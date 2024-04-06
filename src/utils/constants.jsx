@@ -98,10 +98,6 @@ export default {
             icon: <DiPython />,
         },
         {
-            name: "PHP",
-            icon: <SiPhp />,
-        },
-        {
             name: "MySQL",
             icon: <DiMysql />,
         },
@@ -136,9 +132,9 @@ export default {
     ],
     contact_socials: [
         {
-            title: "@ho3einwave",
+            title: "@ho3einwave_",
             icon: <BsDiscord />,
-            link: "https://discord.gg/uhycdqDn",
+            link: "https://discord.gg/humuKHKTgm",
         },
         {
             title: "@ho3einwave",
@@ -154,7 +150,7 @@ export default {
     api_endpoint: "https://api.hoseinwave.ir/v1",
     github_url: "https://github.com/ho3einwave",
     github_username: "Ho3einWave",
-    discord_id: "851218809204768788",
+    discord_id: "743786737901240362",
     birth_year: 2003,
     location: "Shiraz, Iran",
     time_zone: "Asia/Tehran",
@@ -163,7 +159,7 @@ export default {
     map_location_url:
         "https://www.google.com/maps/place/Shiraz,+Fars+Province,+Iran/@29.6415648,52.5317723,11z/data=!4m6!3m5!1s0x3fb20d0c8c85f2e3:0x6d0c5b8aef6b4cf6!8m2!3d29.5926119!4d52.5835646!16zL20vMDl3YzU",
     intro_text_animation: [
-        "a front-end engnieer 🎉",
+        "a front-end dev 🎉",
         1000,
         "a network engineering student 🌐",
         1000,
