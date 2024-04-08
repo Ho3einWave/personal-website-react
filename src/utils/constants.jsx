@@ -25,8 +25,8 @@ import {
     SiGithub,
     SiGnubash,
     SiExpress,
-    SiPhp,
     SiDiscord,
+    SiNextdotjs,
 } from "react-icons/si";
 import { FaSass } from "react-icons/fa";
 export default {
@@ -59,6 +59,10 @@ export default {
         },
     ],
     techs: [
+        {
+            name: "Next.js",
+            icon: <SiNextdotjs />,
+        },
         {
             name: "React.js",
             icon: <DiReact />,
