@@ -8,7 +8,7 @@ import {
     BsGit,
     BsMarkdown,
 } from "react-icons/bs";
-import { IoMail } from "react-icons/io5";
+import { IoLogoElectron, IoMail } from "react-icons/io5";
 import {
     DiReact,
     DiNodejsSmall,
@@ -27,6 +27,8 @@ import {
     SiExpress,
     SiDiscord,
     SiNextdotjs,
+    SiTypescript,
+    SiBun,
 } from "react-icons/si";
 import { FaSass } from "react-icons/fa";
 export default {
@@ -68,6 +70,10 @@ export default {
             icon: <DiReact />,
         },
         {
+            name: "Electron",
+            icon: <IoLogoElectron />,
+        },
+        {
             name: "TailwindCSS",
             icon: <SiTailwindcss />,
         },
@@ -80,6 +86,10 @@ export default {
             icon: <SiJavascript />,
         },
         {
+            name: "Typescript",
+            icon: <SiTypescript />,
+        },
+        {
             name: "VsCode",
             icon: <SiVisualstudiocode />,
         },
@@ -87,6 +97,10 @@ export default {
         {
             name: "NodeJs",
             icon: <DiNodejsSmall />,
+        },
+        {
+            name: "Bun",
+            icon: <SiBun />,
         },
         {
             name: "Express.js",
